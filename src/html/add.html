@@ -1,59 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alta empleado/a</title>
+    <title>Alta Proyecto</title>
 </head>
 <body>
 <div>
 	<header>
-		<h1>ELECTROSHOP S.L.</h1>
+		<h1>INGEDEB</h1>
 	</header>
 	<main>				
 	<ul>
 		<li><a href="index.html">Inicio</a></li>
-		<li><a href="add.html">Alta</a></li>
+		<li><a href="add.html">Alta Proyecto</a></li>
 	</ul>
-	<h2>Alta empleado/a</h2>
-<!--Formulario de alta. Al hacer click en el botón Agregar, llama a la página: add.php-->
+	<h2>Alta Proyecto</h2>
+	<!--Formulario de alta de proyecto. Al hacer click en el botón Agregar, llama a la página: add.php-->
 	<form action="index.html" method="post">
 		<div>
-			<label for="name">Nombre</label>
-			<input type="text" name="name" id="name" placeholder="nombre" required>
+			<label for="project_name">Nombre del Proyecto</label>
+			<input type="text" name="project_name" id="project_name" placeholder="Nombre del Proyecto" required>
 		</div>
 
 		<div>
-			<label for="surname">Apellido</label>
-			<input type="text" name="surname" id="surname" placeholder="apellido" required>
+			<label for="description">Descripción</label>
+			<textarea name="description" id="description" placeholder="Descripción del Proyecto" required></textarea>
 		</div>
 
 		<div>
-			<label for="age">Edad</label>
-			<input type="number" name="age" id="age" placeholder="edad" required>
+			<label for="start_date">Fecha de Inicio</label>
+			<input type="date" name="start_date" id="start_date" required>
 		</div>
 
 		<div>
-			<label for="job">Puesto</label>
-			<select name="job" id="job" placeholder="puesto" required>
-				<option value="" disabled selected>Seleccione un puesto</option>
-				<option value="Administrativo">Administrativo</option>
-				<option value="Contable">Contable</option>
-				<option value="Dependiente">Dependiente</option>
-				<option value="Gerente">Gerente</option>
-				<option value="Repartidor">Repartidor</option>
+			<label for="end_date">Fecha de Fin</label>
+			<input type="date" name="end_date" id="end_date">
+		</div>
+
+		<div>
+			<label for="status">Estado</label>
+			<select name="status" id="status" required>
+				<option value="" disabled selected>Seleccione un estado</option>
+				<option value="En progreso">En progreso</option>
+				<option value="Completado">Completado</option>
+				<option value="En espera">En espera</option>
 			</select>	
 		</div>
 
 		<div>
-			<input type="submit" name="inserta" value="Agregar">
+			<input type="submit" name="inserta" value="Agregar Proyecto">
 			<input type="button" value="Cancelar" onclick="location.href='index.html'">
 		</div>
 	</form>
 	
 	</main>	
 	<footer>
-	Created by the IES Miguel Herrero team &copy; 2025
+		Created by Ana Deb &copy; 2025
   	</footer>
 </div>
 </body>

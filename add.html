@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta Proyecto</title>
+</head>
+<body>
+<div>
+	<header>
+		<h1>INGEDEB</h1>
+	</header>
+	<main>				
+	<ul>
+		<li><a href="index.php">Inicio</a></li>
+		<li><a href="add.html">Alta</a></li>
+	</ul>
+	<h2>Alta Proyecto</h2>
+
+	<!--FORMULARIO DE ALTA. Al hacer click en el botón Agregar, llama a la página: add_action.php -->
+	<!--La página add_action.php se encargará de proceder a la inserción del registro en la tabla de proyectos-->
+
+	<form action="add_action.php" method="post">
+		<div>
+			<label for="descripcion">Descripción</label>
+			<input type="text" name="descripcion" id="descripcion" placeholder="Descripción del proyecto" required>
+		</div>
+
+		<div>
+			<label for="fecha_inicio">Fecha de inicio</label>
+			<input type="date" name="fecha_inicio" id="fecha_inicio" placeholder="Fecha de inicio" required>
+		</div>
+
+		<div>
+			<label for="fecha_fin">Fecha de fin</label>
+			<input type="date" name="fecha_fin" id="fecha_fin" placeholder="Fecha de fin" required>
+		</div>
+
+		<div>
+			<label for="estado">Estado</label>
+			<select name="estado" id="estado" required>
+				<option value="" disabled selected>Seleccione un estado</option>
+				<option value="En progreso">En progreso</option>
+				<option value="Finalizado">Finalizado</option>
+				<option value="Pendiente">Pendiente</option>
+			</select>	
+		</div>
+
+		<div>
+			<input type="submit" name="inserta" value="Agregar">
+			<input type="button" value="Cancelar" onclick="location.href='index.php'">
+		</div>
+	</form>
+	
+	</main>	
+	<footer>
+		Created by Ana Deb &copy; 2025
+  	</footer>
+</div>
+</body>
+</html>

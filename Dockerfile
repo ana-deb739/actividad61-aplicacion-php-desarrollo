@@ -13,7 +13,7 @@ ENV TZ=Europe/Madrid
 
 # En este caso le asignamos unos valores por defecto a la aplicación CRUD PHP: "mariadb", "electroshop", "usuario", "usuario@1"
 ENV MARIADB_HOST=mariadb
-ENV MARIADB_DATABASE=electroshop
+ENV MARIADB_DATABASE=proyectos_ana
 ENV MARIADB_USER=usuario
 ENV MARIADB_PASSWORD=usuario@1
 
