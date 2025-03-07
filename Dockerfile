@@ -35,6 +35,7 @@ COPY /src /var/www/html
 
 COPY /conf/000-default.conf /etc/apache2/sites-available/
 
+
 # EXPOSE: INFORMA de los puertos que utilizará el contenedor cuando esté en ejecución
 # La instrucción EXPOSE no publica el puerto al exterior, solo informa a Docker.
 EXPOSE 80
