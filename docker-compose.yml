@@ -34,10 +34,10 @@ services:
       - 3306:3306
     environment: 
 # El acceso a las variables de entorno puede ser de dos maneras: $MARIADB_DATABASE ó ${MARIADB_DATABASE} utilizan el valor de la variable MARIADB_DATABASE definida en .env
-      - MARIADB_ROOT_PASSWORD=${ROOT_PASSWORD}
-      - MARIADB_DATABASE=${DATABASE}
-      - MARIADB_USER=${USERNAME}
-      - MARIADB_PASSWORD=${PASSWORD}
+      - MARIADB_ROOT_PASSWORD=AnaDiaz@2002
+      - MARIADB_DATABASE=actividad61AnDi
+      - MARIADB_USER=usuarioAnDi
+      - MARIADB_PASSWORD=AnaDiaz@2002 
       - LANG=C.UTF-8
     volumes:
 # Uno de tipo volumen y otro de tip "bind-mount"
